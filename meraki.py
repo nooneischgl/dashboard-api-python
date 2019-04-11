@@ -24,6 +24,10 @@ import warnings
 
 base_url = 'https://api.meraki.com/api/v0'
 
+def updateBaseUrl(shard):
+          base_url = 'https://'+shard+'.meraki.com/api/v0'
+          
+
 tzlist = ['Africa/Abidjan',
           'Africa/Accra',
           'Africa/Addis_Ababa',
